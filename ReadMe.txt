@@ -3,13 +3,16 @@ Main aim of this code pieces is to unify the internet check for iOS and Android 
 I didnt try it for other tools. But it may work with small changes.
 
 In iOS folder there 2 classes. Just add them to proj.ios_mac/ios folder.
+and add them to project by right clicking the group and add new files option over xcode.
 In Android folder there is 1 class. add it to proj.android-studio/app/src/your/package/name.
 And lastly;
 In CocosProject folder add InternetStatus file to somewhere in Classes. 
 Important note:
 you have to change the package names in JNI methods in InternetStatus to your package name.
 Currently they are com/sngict/game/connection/Connectivity.
-you should have to convert them to your/package/name/Connectivity to make them work.
+you have to convert them to your/package/name/Connectivity to make them work.
+
+
 
 there are 3 basic static functions usages are simple:
 
@@ -18,5 +21,3 @@ there are 3 basic static functions usages are simple:
     InternetStatus::isConnectionTypeMobile();
 
 code tested in iOS 7+ and Android 4.1.3+. 
-
-happy coding! :)
